@@ -12,7 +12,7 @@ class FeaturedListViewItem extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
           return const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 16),
+            padding: EdgeInsets.only(right: 20),
             child: CustomListViewItem(),
           );
         },

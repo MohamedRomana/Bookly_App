@@ -32,38 +32,36 @@ class BestSellerListViewItem extends StatelessWidget {
         ),
         SizedBox(
           width: MediaQuery.of(context).size.width * .58,
-          child: Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  'Harry Potter \nand the Goblet of Fire',
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
-                  style: Styles.textStyle20.copyWith(
-                    fontFamily: kGtsectrafine,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Harry Potter \nand the Goblet of Fire',
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+                style: Styles.textStyle20.copyWith(
+                  fontFamily: kGtsectrafine,
+                ),
+              ),
+              const SizedBox(
+                height: 3,
+              ),
+              const Text(
+                'J.K. Rowling',
+                style: Styles.textStyle14,
+              ),
+              Row(
+                children: [
+                  Text(
+                    '19.99 €',
+                    style: Styles.textStyle20
+                        .copyWith(fontWeight: FontWeight.bold),
                   ),
-                ),
-                const SizedBox(
-                  height: 3,
-                ),
-                const Text(
-                  'J.K. Rowling',
-                  style: Styles.textStyle14,
-                ),
-                Row(
-                  children: [
-                    Text(
-                      '19.99 €',
-                      style: Styles.textStyle20
-                          .copyWith(fontWeight: FontWeight.bold),
-                    ),
-                    const Spacer(),
-                    const BookRating(),
-                  ],
-                )
-              ],
-            ),
+                  const Spacer(),
+                  const BookRating(),
+                ],
+              )
+            ],
           ),
         )
       ],

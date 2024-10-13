@@ -33,8 +33,5 @@ class BookDetailsViewBody extends StatelessWidget {
         ),
       ],
     );
-    // return Scaffold(
-    //   body:
-    // );
   }
 }

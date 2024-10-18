@@ -1,4 +1,5 @@
 // import 'package:booklyapp/Features/home/presentation/views/widgets/best_seller_list_view_item.dart';
+import 'package:booklyapp/Features/home/presentation/views/widgets/best_seller_list_view.dart';
 import 'package:flutter/material.dart';
 
 class SearchResultListView extends StatelessWidget {
@@ -6,16 +7,17 @@ class SearchResultListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      padding: EdgeInsets.zero,
-      itemCount: 20,
-      itemBuilder: (context, index) {
-        return const Padding(
-          padding: EdgeInsets.symmetric(vertical: 10),
-          // child: BestSellerListViewItem(),
-          child: Text('data'),
-        );
-      },
-    );
+    return BestSellerListView();
+    // ListView.builder(
+    //   padding: EdgeInsets.zero,
+    //   itemCount: 20,
+    //   itemBuilder: (context, index) {
+    //     return const Padding(
+    //       padding: EdgeInsets.symmetric(vertical: 10),
+    //       // child: BestSellerListViewItem(),
+    //       child: Text('data'),
+    //     );
+    //   },
+    // );
   }
 }

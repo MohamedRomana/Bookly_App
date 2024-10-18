@@ -13,7 +13,7 @@ class SimilarBooksListViw extends StatelessWidget {
         itemBuilder: (context, index) {
           return const Padding(
             padding: EdgeInsets.symmetric(horizontal: 5),
-            child: CustomBookImage(),
+            child: CustomBookImage(imageUrl: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fbooks.goalkicker.com%2F&psig=AOvVaw22hZu3lUD9BMElquCzdmjU&ust=1729343588247000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIjO9IKBmIkDFQAAAAAdAAAAABAE',),
           );
         },
       ),

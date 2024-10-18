@@ -7,7 +7,7 @@ class SearchResultListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BestSellerListView();
+    return const BestSellerListView();
     // ListView.builder(
     //   padding: EdgeInsets.zero,
     //   itemCount: 20,
